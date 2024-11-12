@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES6",
+    "module": "esnext",
+    "lib": ["ES5"],
+    "jsx": "react",
+    "types": ["node"],
+    "declaration": true,
+    "outDir": "dist",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "strict": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "generate-methods.ts", "generate-methods.ts", "src/config.ts"],
+
+}

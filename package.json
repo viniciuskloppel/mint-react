@@ -1,0 +1,38 @@
+{
+  "name": "mint",
+  "version": "0.1.0",
+  "description": "React components to format and display dates in JSX with ease.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clean": "rimraf dist",
+    "build": "pnpm run plop && tsup",
+    "plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=./plopfile.ts",
+    "prettier:mintMethods": "prettier --write ./src/constants/mintMethods.ts",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.24.0",
+    "handlebars": "^4.7.8",
+    "plop": "^4.0.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "tsafe": "^1.8.4",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  }
+}
