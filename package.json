@@ -2,6 +2,7 @@
   "name": "mint-react",
   "version": "0.1.0",
   "description": "React components to format and display dates in JSX with ease.",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -20,9 +21,6 @@
     "type-check": "tsc --noEmit",
     "prepublishOnly": "pnpm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
@@ -38,6 +36,16 @@
     "typescript": "^5.6.3"
   },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
-  }
+    "react": "^17 || ^18 || ^19 || ^19.0.0-rc"
+  },
+  "author": "Vinicius Klöppel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viniciuskloppel/mint-react"
+  },
+  "keywords": [
+    "react",
+    "date",
+    "typescript"
+  ]
 }
