@@ -1,6 +1,6 @@
 {
   "name": "mint-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components to format and display dates in JSX with ease.",
   "license": "MIT",
   "main": "dist/index.js",
